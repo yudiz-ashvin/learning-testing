@@ -1,3 +1,7 @@
+<p align="center">
+  <img src='./testing_types.png' width="900" title="Types of Testing">
+</p>
+
 ## Month 1:
 
 ### Week 1: Introduction to Backend Testing
@@ -54,8 +58,5 @@
 - Advanced concepts in testing for backend (e.g., property-based testing, snapshot testing)
 - Review of the entire course for backend testing with Chai, Mocha, and Supertest
 
-![alt text]('./testing_types.png')
 
-<p align="center">
-  <img src='./testing_types.png' width="350" title="Types of Testing">
-</p>
+
