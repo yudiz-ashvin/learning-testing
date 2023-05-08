@@ -57,6 +57,3 @@
 - Best practices in testing for backend
 - Advanced concepts in testing for backend (e.g., property-based testing, snapshot testing)
 - Review of the entire course for backend testing with Chai, Mocha, and Supertest
-
-
-
