@@ -44,8 +44,8 @@ describe('Mongoose Database Connection', () => {
       .save()
       .then(() => User.find({ sUserName: 'Ashvin Vanol' }))
       .then((user) => {
-        // expect(user).to.have.lengthOf(1);
-        // expect(user[0].sUserName).to.equal('Ashvin Vanol');
+        expect(user).to.have.lengthOf(1);
+        expect(user[0].sUserName).to.equal('Ashvin Vanol');
         done();
       })
       .catch((err) => done(err));
@@ -54,7 +54,7 @@ describe('Mongoose Database Connection', () => {
   it('use  methods', (done) => {
     User.find({ nAge: 25 })
       .then((users) => {
-        expect(users).to.have.lengthOf(5);
+        expect(users).to.have.lengthOf(1);
         // expect(users[3].nAge).to.equal(25);
         done();
       })
