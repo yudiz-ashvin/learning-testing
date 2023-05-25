@@ -1,13 +1,10 @@
 const mongoose = require('mongoose');
 const chai = require('chai');
 const expect = chai.expect;
-
-// Require your Mongoose models here
-const { User } = require('./models'); // Assuming you have a User model defined in a separate file
+const { User } = require('./models');
 
 describe('Mongoose Database Connection', () => {
   before((done) => {
-    // Connect to the MongoDB database
     mongoose.connect('mongodb://localhost/myLocalDb', {
       useNewUrlParser: true,
       useUnifiedTopology: true,
@@ -17,7 +14,8 @@ describe('Mongoose Database Connection', () => {
     db.on('error', console.error.bind(console, 'Connection error:'));
     db.once('open', () => {
       console.log('Connected to the database!');
-      done(); // Call done() to indicate that the before hook has completed
+      done();
+      // Call done() to indicate that the before hook has completed
     });
   });
 
@@ -27,6 +25,9 @@ describe('Mongoose Database Connection', () => {
       console.log('Database connection closed.');
       done(); // Call done() to indicate that the after hook has completed
     });
+  });
+  beforeEach('delete collection after each insertion', async () => {
+    await User.drop();
   });
 
   it('should retrieve a list of models', () => {
