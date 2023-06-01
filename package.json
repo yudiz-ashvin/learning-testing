@@ -1,0 +1,30 @@
+{
+  "name": "learning-testing",
+  "version": "1.0.0",
+  "description": "<p align=\"center\">   <img src='./testing_types.png' width=\"900\" title=\"Types of Testing\"> </p>",
+  "main": "test.js",
+  "scripts": {
+    "test": "mocha",
+    "test-coverage": "NODE_ENV=test istanbul cover _mocha —- -R spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yudiz-ashvin/learning-testing.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yudiz-ashvin/learning-testing/issues"
+  },
+  "homepage": "https://github.com/yudiz-ashvin/learning-testing#readme",
+  "devDependencies": {
+    "chai": "^4.3.7",
+    "istanbul": "^0.4.5",
+    "mocha": "^10.2.0",
+    "supertest": "^6.3.3"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
