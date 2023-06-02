@@ -17,7 +17,7 @@ module.exports = {
   //   extension: ['js'],
   //   'fail-zero': true,
   //   fgrep: 'something', // fgrep and grep are mutually exclusive
-  file: ['./test.js'],
+  file: ['./test.test.js'],
   //   'forbid-only': false,
   //   'forbid-pending': false,
   //   'full-trace': false,
